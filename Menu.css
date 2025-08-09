@@ -1,0 +1,95 @@
+.menu-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  perspective: 1000px;
+  overflow: hidden;
+}
+
+.menu-card {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 40px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+  transform-style: preserve-3d;
+  animation: floatCard 6s ease-in-out infinite;
+  text-align: center;
+  width: 300px;
+}
+
+.menu-card h2 {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 3px #000;
+}
+
+.menu-card p {
+  font-size: 1rem;
+  color: #eee;
+  margin-bottom: 30px;
+}
+
+.menu-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.menu-buttons button {
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+  color: #222;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, background 0.3s, box-shadow 0.3s;
+}
+
+.menu-buttons button:hover {
+  transform: scale(1.05) translateY(-3px);
+  background: linear-gradient(to right, #ffecd2, #fcb69f);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes floatCard {
+  0% {
+    transform: rotateY(0deg) translateY(0px);
+  }
+  50% {
+    transform: rotateY(5deg) translateY(-10px);
+  }
+  100% {
+    transform: rotateY(0deg) translateY(0px);
+  }
+}
+
+.logout-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+
+}
+
+.logout-button {
+  padding: 12px 22px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(to right, #cb9911, #f8fc25);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.logout-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}

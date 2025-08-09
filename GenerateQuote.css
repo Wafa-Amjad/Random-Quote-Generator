@@ -1,0 +1,92 @@
+.generate-quote-container {
+  background: url('https://www.transparenttextures.com/patterns/stardust.png'), linear-gradient(135deg, #fceabb 0%, #f8b500 100%);
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.generate-quote-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+select {
+  padding: 10px 15px;
+  border: 2px solid #ffa500;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  outline: none;
+  background-color: #fffbe6;
+  transition: border-color 0.3s;
+}
+
+select:focus {
+  border-color: #ff7f00;
+}
+
+.generate-btn, .favourite-btn, .back-btn {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.generate-btn {
+  background-color: #ff9900;
+  color: white;
+}
+
+.generate-btn:hover {
+  background-color: #e68a00;
+}
+
+.favourite-btn {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+.favourite-btn:hover {
+  background-color: #cc0000;
+}
+
+.back-btn {
+  background-color: #666;
+  color: white;
+}
+
+.back-btn:hover {
+  background-color: #444;
+}
+
+.quote-box {
+  background-color: #fff8e1;
+  border-left: 6px solid #ffc107;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.quote-box p {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #222;
+}

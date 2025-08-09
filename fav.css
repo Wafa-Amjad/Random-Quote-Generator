@@ -1,0 +1,113 @@
+/* Base styles */
+body {
+  background: linear-gradient(120deg, #f6d365, #fda085);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Container */
+.favourite-list {
+  max-width: 90%;
+  width: 600px;
+  margin: 50px auto;
+  padding: 30px 20px;
+  background-color: rgba(255, 255, 255, 0.92);
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading */
+.favourite-list h3 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #d7263d;
+  margin-bottom: 30px;
+}
+
+/* Individual quote card */
+.quote-item {
+  background-color: #fff3e6;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-left: 5px solid #ff8c42;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  transition: transform 0.3s ease;
+}
+
+.quote-item:hover {
+  transform: translateY(-3px);
+}
+
+.quote-item p {
+  font-size: 1.1rem;
+  color: #444;
+  flex: 1 1 80%;
+  margin: 0;
+  word-break: break-word;
+}
+
+/* Remove button */
+.quote-item button {
+  background-color: #ff5e57;
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  flex: 1 1 18%;
+  margin-top: 10px;
+}
+
+.quote-item button:hover {
+  background-color: #e04845;
+}
+
+/* Centered button wrapper */
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+/* Back to Menu button */
+.logout-button {
+  background-image: linear-gradient(to right, #4e4376, #2b5876);
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+  min-width: 200px;
+}
+
+.logout-button:hover {
+  transform: scale(1.05);
+  background-color: #1e3c5a;
+}
+
+/* Responsive behavior */
+@media screen and (max-width: 600px) {
+  .quote-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .quote-item button {
+    width: 100%;
+  }
+
+  .logout-button {
+    width: 100%;
+    min-width: unset;
+  }
+}
